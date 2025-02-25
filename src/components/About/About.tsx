@@ -1,19 +1,28 @@
-import React from 'react';
+import { useEffect } from 'react';
 import style from './styles.module.scss';
 import Image from 'next/image';
+import 'aos/dist/aos.css'; 
+import * as AOS from 'aos';
 
 const Guarantee = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          offset: 50,
+        });
+    }, []);
 
   return (
     <section className={style.container}>
         <div className={style.content}>
             <div className={style.top}>
                 <div className={style.leftSide}>
-                    <div className={style.leftSideContent}>
+                    <div className={style.leftSideContent} data-aos="fade-up" data-aos-delay="250">
                         <Image className={style.logo} src="/PedroProf.png" alt  ="Ícone de correção" width={450} height={500} />
                     </div>
                 </div>
-                <div className={style.rightSide}>
+                <div className={style.rightSide} data-aos="fade-up" data-aos-delay="350">
                     <h5>
                         Quem é
                         <span> Pedro Cezar ?</span>

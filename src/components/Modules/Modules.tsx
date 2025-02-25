@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './style.module.scss';
 import Square from './Square/Square';
 import { motion } from 'framer-motion';
+import 'aos/dist/aos.css'; 
+import * as AOS from 'aos';
 
 const Modules = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          offset: 50,
+        });
+    }, []);
 
     const [ isSpecificPointReached ] = useState(false)
 
@@ -20,12 +29,12 @@ const Modules = () => {
         >
             <section className={style.container}>
                 <div className={style.content}>
-                    <div className={style.title}>
+                    <div className={style.title} data-aos="fade-up" data-aos-delay="300">
                         <h2> 
                             <span>Nossos Serviços</span> 
                         </h2>
                     </div>
-                    <div className={style.row}>
+                    <div className={style.row}  data-aos="fade-up" data-aos-delay="400" >
                         <Square 
                             color={textColor}
                             title="Sites Institucionais"

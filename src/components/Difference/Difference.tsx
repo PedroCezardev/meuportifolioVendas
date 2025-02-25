@@ -1,12 +1,22 @@
-import React from 'react'
+import { useEffect } from 'react';
 import style from './styles.module.scss';
 import Image from 'next/image';
+import 'aos/dist/aos.css'; 
+import * as AOS from 'aos';
 
 const Difference = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          offset: 50,
+        });
+    }, []);
+
   return (
     <section className={style.container}>
         <div className={style.content}>
-            <div className={style.title}>
+            <div className={style.title} data-aos="fade-up" data-aos-delay="200">
                 <h2>A diferença absurda entre ter
                     <span> um site profissional </span>
                     <span> com o Pedro </span>
@@ -14,7 +24,7 @@ const Difference = () => {
                 </h2>
             </div>
             <div className={style.bottom}>
-                <div className={style.leftBox}>
+                <div className={style.leftBox} data-aos="fade-up" data-aos-delay="250">
                     <div className={style.titleBox}>
                         <h5>Sites genéricos e amadores</h5>
                     </div>
@@ -43,7 +53,7 @@ const Difference = () => {
                         <p>Suporte inexistente</p>
                     </div>
                 </div>
-                <div className={style.rightBox}>
+                <div className={style.rightBox} data-aos="fade-up" data-aos-delay="300">
                     <div className={style.titleBox}>
                         <h5>Sites feitos <span> pelo PEDRO </span> </h5>
                     </div>
@@ -73,7 +83,7 @@ const Difference = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.button}>
+            <div className={style.button} data-aos="fade-up" data-aos-delay="250">
                 <button>QUERO MEU SITE PROFISSIONAL</button>
             </div>
         </div>

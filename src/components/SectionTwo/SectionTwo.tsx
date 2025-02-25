@@ -1,9 +1,18 @@
-import React from 'react';
+import { useEffect } from 'react';
 import style from './styles.module.scss';
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
-import { FaGlobe, FaSearch,  FaBriefcase, FaClock, FaBullseye } from "react-icons/fa";
+import 'aos/dist/aos.css'; 
+import * as AOS from 'aos';import { FaGlobe, FaSearch,  FaBriefcase, FaClock, FaBullseye } from "react-icons/fa";
+
 
 const SectionTwo = () => {
+
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+  }, []);
 
   const benefits = [
       { icon: <FaGlobe />, title: "Presença online", desc: "Seja encontrado por clientes a qualquer hora, em qualquer lugar." },
@@ -17,7 +26,7 @@ const SectionTwo = () => {
   return (
     <section className={style.container}>
       <div className={style.content}>
-        <div className={style.title}>
+        <div className={style.title} data-aos="fade-up" data-aos-delay="200">
           <h5>
             Por que ter um
             <span> Site ?</span>
@@ -30,7 +39,7 @@ const SectionTwo = () => {
         </div>
         <div className={style.grid}>
           {benefits.map((item, index) => (
-              <div className={style.info} key={index}>
+              <div className={style.info} key={index}  data-aos="fade-up" data-aos-delay={index * 200}>
                   <div className={style.icon} >
                       <div className={style.gradientBackground}></div>
                       {item.icon}

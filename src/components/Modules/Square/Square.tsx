@@ -1,6 +1,8 @@
-import React from 'react';
+import { useEffect } from 'react';
 import style from './styles.module.scss';
 import { motion } from 'framer-motion';
+import 'aos/dist/aos.css'; 
+import * as AOS from 'aos';
 
 interface SquareProps{
   color: string;
@@ -19,6 +21,14 @@ const Square = ({
   bodyText,
   width,
 }: SquareProps) => {
+
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+  }, []);
+
   return (
     <motion.div
       className={style.container}
@@ -29,7 +39,7 @@ const Square = ({
         width,
       }}
     >
-      <div className={style.container}>
+      <div className={style.container} data-aos="fade-up" data-aos-delay="400">
         <div className={style.content}>
           <div className={style.texts}>
             <div className={style.title}>

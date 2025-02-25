@@ -2,6 +2,7 @@ import React from 'react'
 import style from './style.module.scss';
 import Link from 'next/link';
 import Accordion from '../Accordion/Accordion';
+import Image from 'next/image';
 
 const Questions = () => {
   return (
@@ -10,70 +11,48 @@ const Questions = () => {
             <div className={style.leftSide}>
                 <div className={style.title}>
                     <h2>
-                        Ficou com alguma <span>dúvida</span>?
+                        Vamos criar o seu <br/> site dos<span> sonhos ?</span>
                     </h2>
                 </div>
                 <div className={style.subtitle}>
                     <h4>
-                        Confira as respostas frequentes ou entre em contato
-                        conosco pelos canais abaixo:
+                    Entre em contato agora e garanta um site profissional 
+                    que destaque seu negócio e atraia mais clientes!
                     </h4>
                 </div>
                 <div className={style.box}>
                     <div className={style.icon}>
-                        <img src="/whats.svg" alt="" />
+                        <Image src="/whats.svg" alt  ="Ícone de whatsapp" width={80} height={80} />
                     </div>
                     <Link href="#">
                         <div className={style.text}>
                             <h3>
-                                Atendimento por <span>whatsapp</span>
+                                Fazer Orçamento <span>Gratuito</span>
                             </h3>
-                            <p>Toque aqui pra tirar sua dúvidas</p>
-                        </div>
-                    </Link>
-                </div>
-                <div className={style.box2}>
-                    <div className={style.icon}>
-                        <img src="/mail.svg" alt="" />
-                    </div>
-                    <Link href="#">
-                        <div className={style.text}>
-                            <h3>
-                                Atendimento por <span>e-mail</span>
-                            </h3>
-                            <p>Toque aqui pra tirar sua dúvidas</p>
                         </div>
                     </Link>
                 </div>
             </div>
             <div className={style.rightSide}>
                 <Accordion  
-                    title="Como faço pra me cadastrar?"
-                    content="Para se cadastrar, basta clicar no botão 'Me Inscrever' em baixo na direita."
+                    title="Quanto tempo leva para meu site ficar pronto?"
+                    content="O prazo varia conforme a complexidade do projeto, mas sites institucionais costumam ficar prontos entre 7 a 15 dias."
                 />
                 <Accordion 
-                    title="Quanto é o preço do curso"
-                    content="O curso é um investimento de apenas $49,00 por mês!"
+                    title="O site será responsivo para celulares e tablets?"
+                    content="Sim! Todos os sites que desenvolvemos são responsivos, garantindo uma ótima experiência em qualquer dispositivo."
                 />
                 <Accordion 
-                    title="O que eu vou aprender?"
-                    content="Nesse curso tem vários modulos diferentes, como: HTML, CSS, JavaScript, Next.js, entre outros!"
+                    title="Meu site será otimizado para aparecer no Google?"
+                    content="Sim! Aplicamos técnicas de SEO para melhorar o posicionamento do seu site nos motores de busca e atrair mais visitantes."
                 />
                 <Accordion 
-                    title="Eu posso cancelar a qualquer momento?"
-                    content="Sim, você pode cancelar a qualquer momento, sem taxas adicionais."
+                    title="Posso atualizar meu site sozinho depois de pronto?"
+                    content="Claro! Se precisar, podemos integrar um painel administrativo para que você mesmo gerencie conteúdos e atualizações."
                 />
                 <Accordion 
-                    title="Quais são as formas de pagamento?"
-                    content="Você pode pagar com cartão de crédito, débito ou até mesmo PIX!."
-                />
-                <Accordion 
-                    title="Serve pra iniciantes"
-                    content="Com certeza! O curso ensinará tudo o que você precisa para se tornar um programador de verdade!"
-                />
-                <Accordion 
-                    title="Não Gostou e quer cancelar?"
-                    content="Sem problemas! Você tem até 7 dias para cancelar e receber seu dinheiro de volta!"
+                    title="Como funciona o pagamento?"
+                    content="O pagamento pode ser feito via Pix, boleto ou cartão de crédito. Também oferecemos a opção de parcelamento para facilitar!"
                 />
             </div>
         </div>

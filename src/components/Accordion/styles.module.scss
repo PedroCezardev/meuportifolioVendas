@@ -65,7 +65,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease; // Smooth transition for max-height
-    padding: 0 1em;
+    padding: 0 1rem;
 
     @media screen and (max-width: 1250px) {
         font-size: 12px;

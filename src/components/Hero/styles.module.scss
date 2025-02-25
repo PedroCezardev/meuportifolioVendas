@@ -15,10 +15,10 @@
 
 .content {
     display: flex;
-    gap: 190px;
+    gap: 240px;
     max-width: 1440px;
-    padding-inline: 170px;
-    padding-block: 120px;
+    padding-inline: 120px;
+    padding-block: 130px;
     align-items: center;
     margin: 0 auto;
 
@@ -242,6 +242,8 @@
     .pedro{
         position: absolute;
         z-index: 10;
+        margin-right: 91px;
+        top: 20%;
 
         @media screen and (max-width: 1250px) {
             width: 400px;
