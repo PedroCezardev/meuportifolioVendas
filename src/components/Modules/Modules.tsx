@@ -29,12 +29,12 @@ const Modules = () => {
         >
             <section className={style.container}>
                 <div className={style.content}>
-                    <div className={style.title} data-aos="fade-up" data-aos-delay="300">
+                    <div className={style.title} data-aos="fade-up" data-aos-delay="900">
                         <h2> 
                             <span>Nossos Serviços</span> 
                         </h2>
                     </div>
-                    <div className={style.row}  data-aos="fade-up" data-aos-delay="400" >
+                    <div className={style.row}  data-aos="fade-up" data-aos-delay="1000" >
                         <Square 
                             color={textColor}
                             title="Sites Institucionais"

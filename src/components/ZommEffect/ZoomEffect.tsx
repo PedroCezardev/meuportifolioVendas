@@ -23,7 +23,7 @@ const ZoomEffect = () => {
                 yPercent = -4500;
             } else {
                 scale = 700;
-                xPercent = -4300;
+                xPercent = -4500;
                 yPercent = 50;
             }
 
@@ -108,7 +108,7 @@ const ZoomEffect = () => {
     return (
         <section id="zoom-in" className={style.zoomSection}>
             <h2 id="zoom-text" className={style.zoomText}>
-                Impulsione seu <span>negócio</span> online
+                Impulsione seu negócio <span>online</span>
             </h2>
             <div className={style.textWrap}>
                 <p id="next-text" className={style.nextText}>
