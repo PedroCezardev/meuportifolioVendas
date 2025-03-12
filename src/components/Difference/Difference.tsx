@@ -55,7 +55,7 @@ const Difference = () => {
                 </div>
                 <div className={style.rightBox} data-aos="fade-up" data-aos-delay="300">
                     <div className={style.titleBox}>
-                        <h5>Sites feitos <span> pelo PEDRO </span> </h5>
+                        <h5>Sites feitos pelo <span> PEDRO </span> </h5>
                     </div>
                     <div className={style.pros}>
                         <Image src="/correct.svg" alt="Ícone de correção" width={24} height={24} />

@@ -72,6 +72,11 @@
         font-size: 40px;
     }
 
+    @media only screen and (max-width: 420px) {
+        font-size: 40px;
+        padding-left: 9px;
+    }
+
     @media only screen and (max-width: 380px) {
         font-size: 35px;
     }

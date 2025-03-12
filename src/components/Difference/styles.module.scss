@@ -100,6 +100,29 @@
         font-style: normal;
         font-weight: 600;
         line-height: 16px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 22px;
+            line-height: 25px;
+        }
+    }
+
+    span {
+        position: relative;
+        display: inline;
+        background: linear-gradient(
+            270deg,
+            #00c2ff,
+            #33ff8c,
+            #ffc640,
+            #e54cff,
+            #00c2ff,
+            #33ff8c
+        );
+        background-size: 600% auto;
+        color: transparent;
+        background-clip: text;
+        animation: shift 5s linear infinite;
     }
 
 }
