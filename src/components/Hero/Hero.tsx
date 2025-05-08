@@ -18,7 +18,7 @@ const Hero = () => {
     <section className={style.container}>
       <div className={style.content}>
         <div className={style.leftSide} data-aos="fade-up" data-aos-delay="200">
-          <Image className={style.logo} src="/logoWebTech (2).svg" alt="Ícone de correção" width={56} height={56} />
+          <Image className={style.logo} src="/LOGO-COMPLETA-PRINCIPAL.png" alt="Ícone de correção" width={400} height={400} />
           <h1>
             Transforme sua presença online com um
             <span> site profissional </span> 

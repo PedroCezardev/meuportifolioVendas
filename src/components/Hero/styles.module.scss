@@ -40,19 +40,25 @@
 .leftSide{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 
     @media screen and (max-width: 768px) {
         align-items: center;
-        gap: 15px;
+        gap: 25px;
     }
 
     img {
-        width: 200px;
-        height: 100px;
+        width: 500px;
+        height: 60px;
+
+        @media screen and (max-width: 1280px) {
+            width: 350px;
+            height: 45px;
+        }
 
         @media screen and (max-width: 768px) {
-            width: 150px;
+            width: 280px;
+            height: 45px;
         }
     }
 
