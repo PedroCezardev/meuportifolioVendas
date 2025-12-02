@@ -19,11 +19,11 @@ export default function QuoteModal({ isOpen, setIsOpen }: QuoteModalProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    const phoneNumber = "985964761" 
+    const phoneNumber = "5581985964761"; 
 
     const message = `Olá, meu nome é ${name}. Meu email é ${email} e meu telefone é ${phone}. Gostaria de um orçamento gratuito.`
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
 
     window.open(whatsappUrl, "_blank")
 
